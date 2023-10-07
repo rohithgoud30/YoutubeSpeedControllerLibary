@@ -35,16 +35,12 @@ YouTube Speed Controller is a userscript for Tampermonkey that allows controllin
    // Note: Ensure that any customization you add does not conflict with the functionality provided by the YouTubeSpeedControllerLibrary.
    // The library handles the speed control and overlay display automatically.
 
-Certainly! Here's the provided content formatted in Markdown:
+3. **Save and Enable the Script:**
+   - Save the script using `Ctrl + S` (Cmd + S on Mac).
+   - Ensure the script is enabled. There should be a switch next to the script name in the Tampermonkey dashboard.
 
-### Save and Enable the Script:
-
-- Save the script using `Ctrl + S` (Cmd + S on Mac).
-- Ensure the script is enabled by clicking on the switch next to the script name in the Tampermonkey dashboard.
-
-### Visit YouTube:
-
-Visit any YouTube video page. The script will automatically run, controlling the video speed and displaying the overlay as per your requirements.
+4. **Visit YouTube:**
+   - Visit any YouTube video page. The script will automatically run, controlling the video speed and displaying the overlay as per your requirements.
 
 ### Customization
 
