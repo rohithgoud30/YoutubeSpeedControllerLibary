@@ -58,12 +58,16 @@ var speedText = 'Speed: ' + speed.toFixed(2);
 
 Userscript by [@rohithgoud30](https://github.com/rohithgoud30)
 
+## Contributing
+
+Feel free to contribute to this project by opening issues or submitting pull requests.
+
 ### License
 
 This project is licensed under the MIT License. See [LICENSE](https://github.com/rohithgoud30/YoutubeSpeedControllerLibary/blob/main/LICENSE) for details.
 
-Feel free to contribute to this project by opening issues or submitting pull requests.
+In this README:
 
----
-
-Ensure to replace `rohithgoud30` in the script with your actual GitHub username and customize the content as per your specific project details.
+- **Usage:** Explains how to install Tampermonkey, add the userscript, and enable it.
+- **Contributing:** Invites others to contribute to your project.
+- **License:** States the license under which your project is distributed.
