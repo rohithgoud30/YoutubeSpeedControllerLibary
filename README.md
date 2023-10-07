@@ -64,7 +64,7 @@ Userscript by [@rohithgoud30](https://github.com/rohithgoud30)
 
 ### License
 
-This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
+This project is licensed under the MIT License. See [LICENSE](https://github.com/rohithgoud30/YoutubeSpeedControllerLibary/blob/main/LICENSE) for details.
 
 Feel free to contribute to this project by opening issues or submitting pull requests.
 
