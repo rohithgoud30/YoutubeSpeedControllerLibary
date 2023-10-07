@@ -42,6 +42,15 @@ YouTube Speed Controller is a userscript for Tampermonkey that allows controllin
 4. **Visit YouTube:**
    - Visit any YouTube video page. The script will automatically run, controlling the video speed and displaying the overlay as per your requirements.
 
+### Keyboard Shortcuts
+
+- <kbd>Ctrl</kbd> + <kbd>,</kbd> - Decrease speed by 0.25x
+- <kbd>Ctrl</kbd> + <kbd>.</kbd> - Increase speed by 0.25x
+
+Pressing the shortcuts will change the video playback speed and display an overlay with the current speed for 1 second.
+
+The minimum speed is 0.25x.
+
 ### Customization
 
 The overlay style and text can be customized by editing the userscript code:
