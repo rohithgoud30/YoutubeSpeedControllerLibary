@@ -6,30 +6,32 @@ YouTube Speed Controller is a userscript for Tampermonkey that allows controllin
 
 ### Installation
 
-1. **Install the Tampermonkey Browser Extension:**
-   - Install the [Tampermonkey](https://www.tampermonkey.net/) browser extension.
-  
+1. **Install Tampermonkey Extension:**
+   - If you haven't already, install the Tampermonkey extension from the [Chrome Web Store](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) (for Chrome) or [Mozilla Add-ons](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/) (for Firefox).
+
 2. **Add the Userscript:**
    - Click on the Tampermonkey icon and go to Dashboard.
    - Under Utilities, click on "Add new script."
-   - Paste the userscript code into the editor.
-   - Click File > Save to save the script.
-   - Ensure the script is enabled by clicking on the switch next to the script name.
+   - Paste the following code into the editor:
 
-### Keyboard Shortcuts
+   ```javascript
+   // ==UserScript==
+   // @name         Speed up video with Overlay
+   // @namespace    http://tampermonkey.net/
+   // @version      0.1
+   // @description  Display video speed as overlay on YouTube player using the YouTubeSpeedControllerLibrary.
+   // @author       rohithgoud30
+   // @match        https://www.youtube.com/watch?*
+   // @grant        none
+   // @require      https://raw.githubusercontent.com/rohithgoud30/YoutubeSpeedControllerLibary/main/youtubeSpeedController.js
+   // ==/UserScript==
 
-- <kbd>Ctrl</kbd> + <kbd>,</kbd> - Decrease speed by 0.25x
-- <kbd>Ctrl</kbd> + <kbd>.</kbd> - Increase speed by 0.25x
+   // The YouTubeSpeedControllerLibrary is a self-invoking function. You don't need to call it manually.
+   // It automatically runs once the script is loaded due to the @require directive above.
 
-Pressing the shortcuts will change the video playback speed and display an overlay with the current speed for 1 second. The minimum speed is 0.25x, and the maximum is 4x.
+   // Your additional userscript code can go here if needed.
+   // For example, if you want to customize the behavior further, add your code below this comment.
 
-### Customization
+   // Note: Ensure that any customization you add does not conflict with the functionality provided by the YouTubeSpeedControllerLibrary.
+   // The library handles the speed control and overlay display automatically.
 
-The overlay style and text can be customized by editing the userscript code:
-
-```javascript
-// Overlay style  
-overlay.style.backgroundColor = 'rgba(255, 255, 255, 0.9)';
-
-// Overlay text
-var speedText = 'Speed: ' + speed.toFixed(2);
