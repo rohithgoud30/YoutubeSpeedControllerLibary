@@ -1,13 +1,10 @@
-// ==UserScript==
 // @name         Speed up video with Overlay
-// @namespace    http://tampermonkey.net/
 // @version      0.1
 // @description  Display video speed as overlay on YouTube player
 // @author       rohithgoud30
 // @match        https://www.youtube.com/watch?*
 // @grant        none
 // @require      https://raw.githubusercontent.com/rohithgoud30/YoutubeSpeedControllerLibary/main/youtubeSpeedController.js
-// ==/UserScript==
 
 
 (function() {
