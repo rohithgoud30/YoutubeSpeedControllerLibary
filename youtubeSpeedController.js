@@ -6,7 +6,9 @@
 // @author       rohithgoud30
 // @match        https://www.youtube.com/watch?*
 // @grant        none
+// @require      https://raw.githubusercontent.com/rohithgoud30/YoutubeSpeedControllerLibary/main/youtubeSpeedController.js
 // ==/UserScript==
+
 
 (function() {
     var speed = 1;
