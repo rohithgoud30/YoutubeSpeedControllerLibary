@@ -20,11 +20,12 @@
     overlay.style.zIndex = '9999';
     overlay.style.transition = 'visibility 1s ease';
     overlay.style.visibility = 'hidden';
-    document.body.appendChild(overlay);
 
     var authorTag = document.createElement('div');
     authorTag.textContent = 'Script by @rohithgoud30';
     authorTag.style.fontSize = 'small';
+
+    document.body.appendChild(overlay);
     overlay.appendChild(authorTag);
 
     function updateSpeed() {
