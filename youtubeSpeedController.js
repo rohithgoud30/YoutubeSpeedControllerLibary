@@ -22,24 +22,15 @@
     overlay.style.visibility = 'hidden';
     document.body.appendChild(overlay);
 
-    var authorTag = document.createElement('div');
-    authorTag.textContent = 'Script by @rohithgoud30';
-    authorTag.style.fontSize = 'small';
-    overlay.appendChild(authorTag);
-
-    var speedTag = document.createElement('div');
-
     function updateSpeed() {
         var speedText = 'Speed: ' + speed.toFixed(2);
-        var highlightedSpeedText = speedText.replace(/(\d+\.\d+)/, '<span style="color: #fdb515;">$1</span>');
-        
-        speedTag.innerHTML = highlightedSpeedText;
-        overlay.appendChild(speedTag);
+        var authorTag = 'Script by @rohithgoud30';
+        var overlayContent = `${speedText} <span style="color: #fdb515;">${authorTag}</span>`;
+        overlay.innerHTML = overlayContent;
 
         overlay.style.visibility = 'visible';
         setTimeout(function() {
             overlay.style.visibility = 'hidden';
-            overlay.removeChild(speedTag);
         }, 1000);
     }
 
