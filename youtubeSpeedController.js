@@ -24,7 +24,7 @@
 
     function updateSpeed() {
         var speedText = 'Speed: <span style="color: #fdb515; font-size: 18px;">' + speed.toFixed(2) + '</span>';
-        var authorTag = '<br><span style="font-size: 142px;">Script by @rohithgoud30</span>';
+        var authorTag = '<br><span style="font-size: 12px;">Script by @rohithgoud30</span>';
         overlay.innerHTML = speedText + authorTag;
 
         overlay.style.visibility = 'visible';
@@ -34,17 +34,19 @@
     }
 
     document.addEventListener('keydown', function(e) {
-        if (e.ctrlKey && e.key === '.') {
-            speed += 0.25;
-        } else if (e.ctrlKey && e.key === ',') {
-            speed -= 0.25;
-        }
+        if ((e.ctrlKey || e.metaKey) && (e.key === '.' || e.key === ',')) {
+            if (e.key === '.') {
+                speed += 0.25;
+            } else if (e.key === ',') {
+                speed -= 0.25;
+            }
 
-        if (speed < 0.25) {
-            speed = 0.25;
-        }
+            if (speed < 0.25) {
+                speed = 0.25;
+            }
 
-        document.getElementsByClassName('html5-main-video')[0].playbackRate = speed;
-        updateSpeed();
+            document.getElementsByClassName('html5-main-video')[0].playbackRate = speed;
+            updateSpeed();
+        }
     });
 })();
