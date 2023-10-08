@@ -36,7 +36,7 @@ YouTube Speed Controller is a userscript for Tampermonkey that allows controllin
    // The library handles the speed control and overlay display automatically.
 
 3. **Save and Enable the Script:**
-   - Save the script using `Ctrl + S` (Cmd + S on Mac).
+   - Save the script using - <kbd>Ctrl</kbd> + <kbd>S</kbd> (Cmd + S on Mac).
    - Ensure the script is enabled. There should be a switch next to the script name in the Tampermonkey dashboard.
 
 4. **Visit YouTube:**
