@@ -25,7 +25,7 @@
 
     function updateSpeed() {
         var speedText = 'Speed: <span style="color: #fdb515; font-size: 18px;">' + speed.toFixed(2) + '</span>';
-        var authorTag = '<br>Script by <span style="font-size: 14px;">@rohithgoud30</span>';
+        var authorTag = '<span style="font-size: 14px;">Script by @rohithgoud30</span>';
         overlay.innerHTML = '<div style="text-align: center;">' + speedText + '</div>' + authorTag;
 
 
