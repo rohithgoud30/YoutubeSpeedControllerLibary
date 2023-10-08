@@ -44,12 +44,11 @@ YouTube Speed Controller is a userscript for Tampermonkey that allows controllin
 
 ### Keyboard Shortcuts
 
-- <kbd>Ctrl</kbd> + <kbd>,</kbd> - Decrease speed by 0.25x
-- <kbd>Ctrl</kbd> + <kbd>.</kbd> - Increase speed by 0.25x
+- <kbd>Ctrl</kbd> + <kbd>,</kbd> - Decrease speed by 0.25x (minimum: 0.25x)
+- <kbd>Ctrl</kbd> + <kbd>.</kbd> - Increase speed by 0.25x (maximum: 8x)
+
 
 Pressing the shortcuts will change the video playback speed and display an overlay with the current speed for 1 second.
-
-The minimum speed is 0.25x.
 
 ### Customization
 
