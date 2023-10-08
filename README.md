@@ -21,7 +21,7 @@ YouTube Speed Controller is a userscript for Tampermonkey that allows controllin
    // @version      0.1
    // @description  Display video speed as overlay on YouTube player using the YouTubeSpeedControllerLibrary.
    // @author       rohithgoud30
-   // @match        https://www.youtube.com/watch?*
+   // @match        https://www.youtube.com/*
    // @grant        none
    // @require      https://raw.githubusercontent.com/rohithgoud30/YoutubeSpeedControllerLibary/main/youtubeSpeedController.js
    // ==/UserScript==
