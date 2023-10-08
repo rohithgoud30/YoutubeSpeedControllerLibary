@@ -11,7 +11,7 @@
     var overlay = document.createElement('div');
     overlay.style.position = 'fixed';
     overlay.style.bottom = '10px';
-    overlay.style.left = '50%';
+    overlay.style.right = '10px'
     overlay.style.transform = 'translateX(-50%)';
     overlay.style.backgroundColor = 'rgba(255, 255, 255, 0.9)';
     overlay.style.color = '#000';
