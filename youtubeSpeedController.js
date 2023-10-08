@@ -34,10 +34,8 @@
         overlay.innerHTML = highlightedSpeedText;
 
         overlay.style.visibility = 'visible';
-        authorTag.style.display = 'block'; // Ensure the authorTag is always visible
         setTimeout(function() {
             overlay.style.visibility = 'hidden';
-            authorTag.style.display = 'none';
         }, 1000);
     }
 
