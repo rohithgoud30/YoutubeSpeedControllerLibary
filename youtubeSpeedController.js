@@ -18,7 +18,7 @@
     overlay.style.fontWeight = 'bold';
     overlay.style.fontSize = '18px';
     overlay.style.padding = '10px';
-    overlay.style.textAlign = 'center'; // Center text horizontally
+    overlay.style.textAlign = 'center';
     overlay.style.zIndex = '9999';
     overlay.style.transition = 'visibility 1s ease';
     overlay.style.visibility = 'hidden';
