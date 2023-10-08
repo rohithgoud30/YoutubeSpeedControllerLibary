@@ -15,7 +15,7 @@
     overlay.style.backgroundColor = 'rgba(255, 255, 255, 0.9)';
     overlay.style.color = '#000';
     overlay.style.fontWeight = 'bold';
-    overlay.style.fontSize = '22px'; // Decreased font size for speed text
+    overlay.style.fontSize = '18px';
     overlay.style.padding = '10px';
     overlay.style.zIndex = '9999';
     overlay.style.transition = 'visibility 1s ease';
@@ -23,8 +23,8 @@
     document.body.appendChild(overlay);
 
     function updateSpeed() {
-        var speedText = 'Speed: <span style="color: #fdb515; font-size: 28px;">' + speed.toFixed(2) + '</span>';
-        var authorTag = '<br>Script by <span style="font-size: 14px;">@rohithgoud30</span>';
+        var speedText = 'Speed: <span style="color: #fdb515; font-size: 18px;">' + speed.toFixed(2) + '</span>';
+        var authorTag = '<br><span style="font-size: 142px;">Script by @rohithgoud30</span>';
         overlay.innerHTML = speedText + authorTag;
 
         overlay.style.visibility = 'visible';
