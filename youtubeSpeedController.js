@@ -36,7 +36,7 @@
         overlay.style.visibility = 'visible';
         setTimeout(function() {
             overlay.style.visibility = 'hidden';
-            // overlay.removeChild(authorTag);
+            overlay.removeChild(authorTag);
         }, 1000);
     }
 
