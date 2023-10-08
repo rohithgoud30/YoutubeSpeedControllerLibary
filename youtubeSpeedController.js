@@ -36,11 +36,6 @@
         var authorTag = '<span style="font-size: 14px;">Script by @rohithgoud30</span>';
         overlay.innerHTML = '<div style="text-align: center;">' + speedText + '</div>' + authorTag;
 
-        // Show warning if speed exceeds the maximum limit
-        if (speed > maxSpeed) {
-            alert('Maximum speed limit (8x) reached!');
-        }
-
         // Make the overlay visible
         overlay.style.visibility = 'visible';
         // Hide the overlay after 1 second
