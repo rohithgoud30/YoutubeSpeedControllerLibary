@@ -30,11 +30,14 @@
     function updateSpeed() {
         var speedText = 'Speed: ' + speed.toFixed(2);
         var highlightedSpeedText = speedText.replace(/(\d+\.\d+)/, '<span style="color: #fdb515;">$1</span>');
+        
         overlay.innerHTML = highlightedSpeedText;
 
         overlay.style.visibility = 'visible';
+        authorTag.style.display = 'block'; // Ensure the authorTag is always visible
         setTimeout(function() {
             overlay.style.visibility = 'hidden';
+            authorTag.style.display = 'none';
         }, 1000);
     }
 
