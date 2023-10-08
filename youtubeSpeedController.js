@@ -1,6 +1,6 @@
 // @name         YouTube Speed Controller
 // @version      0.1
-// @description  Display video speed as overlay on YouTube player
+// @description  Display video speed as overlay on YouTube player using the YouTubeSpeedControllerLibrary.
 // @author       rohithgoud30
 // @match        https://www.youtube.com/*
 // @grant        none
