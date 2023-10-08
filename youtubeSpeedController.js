@@ -1,4 +1,4 @@
-// @name         Speed up video with Overlay
+// @name         YouTube Speed Controller
 // @version      0.1
 // @description  Display video speed as overlay on YouTube player
 // @author       rohithgoud30
@@ -18,7 +18,6 @@
     overlay.style.fontWeight = 'bold';
     overlay.style.fontSize = '18px';
     overlay.style.padding = '10px';
-    overlay.style.textAlign = 'center';
     overlay.style.zIndex = '9999';
     overlay.style.transition = 'visibility 1s ease';
     overlay.style.visibility = 'hidden';
@@ -28,6 +27,7 @@
         var speedText = 'Speed: <span style="color: #fdb515; font-size: 18px;">' + speed.toFixed(2) + '</span>';
         var authorTag = '<br>Script by <span style="font-size: 14px;">@rohithgoud30</span>';
         overlay.innerHTML = '<div style="text-align: center;">' + speedText + '</div>' + authorTag;
+
 
         overlay.style.visibility = 'visible';
         setTimeout(function() {
