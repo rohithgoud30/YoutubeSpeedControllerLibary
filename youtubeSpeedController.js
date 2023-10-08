@@ -2,7 +2,7 @@
 // @version      0.1
 // @description  Display video speed as overlay on YouTube player
 // @author       rohithgoud30
-// @match        https://www.youtube.com/watch?*
+// @match        https://www.youtube.com/*
 // @grant        none
 // @require      https://raw.githubusercontent.com/rohithgoud30/YoutubeSpeedControllerLibary/main/youtubeSpeedController.js
 
@@ -23,35 +23,31 @@
     document.body.appendChild(overlay);
 
     function updateSpeed() {
-        var speedText = 'Speed: ' + speed.toFixed(2);
-        var highlightedSpeedText = speedText.replace(/(\d+\.\d+)/, '<span style="color: #fdb515;">$1</span>');
-        
-        overlay.innerHTML = highlightedSpeedText;
-        
-        var authorTag = document.createElement('div');
-        authorTag.textContent = 'Script by @rohithgoud30';
-        authorTag.style.fontSize = 'small';
-        overlay.appendChild(authorTag);
+        var newSpeed = prompt("Speed?");
+        if (newSpeed !== null) {
+            speed = parseFloat(newSpeed);
+            document.getElementsByClassName('html5-main-video')[0].playbackRate = speed;
+            
+            var speedText = 'Speed: ' + speed.toFixed(2);
+            var highlightedSpeedText = speedText.replace(/(\d+\.\d+)/, '<span style="color: #fdb515;">$1</span>');
+            overlay.innerHTML = highlightedSpeedText;
+            
+            var authorTag = document.createElement('div');
+            authorTag.textContent = 'Script by @rohithgoud30';
+            authorTag.style.fontSize = 'small';
+            overlay.appendChild(authorTag);
 
-        overlay.style.visibility = 'visible';
-        setTimeout(function() {
-            overlay.style.visibility = 'hidden';
-            // overlay.removeChild(authorTag);
-        }, 1000);
+            overlay.style.visibility = 'visible';
+            setTimeout(function() {
+                overlay.style.visibility = 'hidden';
+                overlay.removeChild(authorTag);
+            }, 1000);
+        }
     }
 
     document.addEventListener('keydown', function(e) {
-        if (e.ctrlKey && e.key === '.') {
-            speed += 0.25;
-        } else if (e.ctrlKey && e.key === ',') {
-            speed -= 0.25;
+        if (e.ctrlKey && e.key === 's') {
+            updateSpeed();
         }
-
-        if (speed < 0.25) {
-            speed = 0.25;
-        }
-
-        document.getElementsByClassName('html5-main-video')[0].playbackRate = speed;
-        updateSpeed();
     });
 })();
