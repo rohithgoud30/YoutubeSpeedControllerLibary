@@ -26,16 +26,20 @@
         var speedText = 'Speed: ' + speed.toFixed(2);
         var highlightedSpeedText = speedText.replace(/(\d+\.\d+)/, '<span style="color: #fdb515;">$1</span>');
 
+        var overlayContent = document.createElement('div');
+        overlayContent.innerHTML = highlightedSpeedText;
+
         var authorTag = document.createElement('div');
         authorTag.textContent = 'Script by @rohithgoud30';
         authorTag.style.fontSize = 'small';
-        overlay.innerHTML = highlightedSpeedText;
-        overlay.appendChild(authorTag);
+
+        overlayContent.appendChild(authorTag);
+        overlay.innerHTML = ''; // Clear existing content
+        overlay.appendChild(overlayContent);
 
         overlay.style.visibility = 'visible';
         setTimeout(function() {
             overlay.style.visibility = 'hidden';
-            overlay.removeChild(authorTag);
         }, 1000);
     }
 
