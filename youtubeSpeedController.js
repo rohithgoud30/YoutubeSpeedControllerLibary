@@ -6,7 +6,6 @@
 // @grant        none
 // @require      https://raw.githubusercontent.com/rohithgoud30/YoutubeSpeedControllerLibary/main/youtubeSpeedController.js
 
-
 (function() {
     var speed = 1;
     var overlay = document.createElement('div');
@@ -26,14 +25,13 @@
     function updateSpeed() {
         var speedText = 'Speed: ' + speed.toFixed(2);
         var highlightedSpeedText = speedText.replace(/(\d+\.\d+)/, '<span style="color: #fdb515;">$1</span>');
-        
-        overlay.innerHTML = highlightedSpeedText;
-        
+
         var authorTag = document.createElement('div');
         authorTag.textContent = 'Script by @rohithgoud30';
         authorTag.style.fontSize = 'small';
+        overlay.innerHTML = highlightedSpeedText;
         overlay.appendChild(authorTag);
-        
+
         overlay.style.visibility = 'visible';
         setTimeout(function() {
             overlay.style.visibility = 'hidden';
