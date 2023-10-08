@@ -11,6 +11,9 @@
     // Initial speed set to 1x
     var speed = 1;
 
+    // Maximum speed limit set to 8x
+    var maxSpeed = 8;
+
     // Create a div element for the overlay
     var overlay = document.createElement('div');
     // Styling for the overlay
@@ -33,6 +36,11 @@
         var authorTag = '<span style="font-size: 14px;">Script by @rohithgoud30</span>';
         overlay.innerHTML = '<div style="text-align: center;">' + speedText + '</div>' + authorTag;
 
+        // Show warning if speed exceeds the maximum limit
+        if (speed > maxSpeed) {
+            alert('Maximum speed limit (8x) reached!');
+        }
+
         // Make the overlay visible
         overlay.style.visibility = 'visible';
         // Hide the overlay after 1 second
@@ -54,10 +62,8 @@
                 speed -= 0.25;
             }
 
-            // Ensure the speed is within the valid range (minimum: 0.25x, maximum: unlimited)
-            if (speed < 0.25) {
-                speed = 0.25;
-            }
+            // Ensure the speed is within the valid range (minimum: 0.25x, maximum: 8x)
+            speed = Math.min(Math.max(speed, 0.25), maxSpeed);
 
             // Set the video playback speed
             document.getElementsByClassName('html5-main-video')[0].playbackRate = speed;
