@@ -11,21 +11,22 @@
     var overlay = document.createElement('div');
     overlay.style.position = 'fixed';
     overlay.style.bottom = '10px';
-    overlay.style.right = '10px';
+    overlay.style.left = '50%';
+    overlay.style.transform = 'translateX(-50%)';
     overlay.style.backgroundColor = 'rgba(255, 255, 255, 0.9)';
     overlay.style.color = '#000';
     overlay.style.fontWeight = 'bold';
     overlay.style.fontSize = '18px';
     overlay.style.padding = '10px';
+    overlay.style.textAlign = 'center'; // Center text horizontally
     overlay.style.zIndex = '9999';
     overlay.style.transition = 'visibility 1s ease';
     overlay.style.visibility = 'hidden';
     document.body.appendChild(overlay);
 
     function updateSpeed() {
-        var speedText = '<span style="margin: 0 auto;">Speed: <span style="color: #fdb515; font-size: 18px;">' + speed.toFixed(2) + '</span></span>';
-        var authorTag = '<br><span style="font-size: 14px;">Script by @rohithgoud30</span>';
-        overlay.innerHTML = speedText + authorTag;
+        var speedText = 'Speed: <span style="color: #fdb515; font-size: 18px;">' + speed.toFixed(2) + '</span>';
+        overlay.innerHTML = speedText;
 
         overlay.style.visibility = 'visible';
         setTimeout(function() {
