@@ -50,18 +50,6 @@ YouTube Speed Controller is a userscript for Tampermonkey that allows controllin
 
 Pressing the shortcuts will change the video playback speed and display an overlay with the current speed for 1 second.
 
-### Customization
-
-The overlay style and text can be customized by editing the userscript code:
-
-```javascript
-// Overlay style  
-overlay.style.backgroundColor = 'rgba(255, 255, 255, 0.9)';
-
-// Overlay text
-var speedText = 'Speed: ' + speed.toFixed(2);
-```
-
 ### Credits
 
 Userscript by [@rohithgoud30](https://github.com/rohithgoud30)
